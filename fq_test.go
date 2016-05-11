@@ -27,17 +27,15 @@ func readLine(path string) string {
 		switch pos {
 		case 1:
 			if (!strings.HasPrefix(text, "@")) {
-				return "scan failed at line " + strconv.Itoa(line) + " should be @ but got " + string(text[0]) + ", last good read ended at " + strconv.Itoa(lastGood*4)
+				return "scan failed at line " + strconv.Itoa(line) + " should be @ but got " + string(text[0]) + ", last good read ended at " + strconv.Itoa(lastGood * 4)
 			}
 
 		case 3:
 
 			if (!strings.HasPrefix(text, "+")) {
-				return "scan failed at line " + strconv.Itoa(line) + " should be + but got " + string(text[0]) + ", last good read ended at " + strconv.Itoa(lastGood*4)
+				return "scan failed at line " + strconv.Itoa(line) + " should be + but got " + string(text[0]) + ", last good read ended at " + strconv.Itoa(lastGood * 4)
 			}
 		}
-
-
 
 		if (pos == 4) {
 			lastGood++
