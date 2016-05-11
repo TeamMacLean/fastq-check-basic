@@ -1,1 +1,1 @@
-## FastQ Check
+# FastQ Check
